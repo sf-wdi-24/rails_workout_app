@@ -1,0 +1,11 @@
+<h1>New Workout</h1>
+<hr>
+<%= form_for @workout do |f| %>
+  <div class="form-group">
+    <%= f.text_field :description, placeholder: "Description", autofocus: true, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.text_field :category, placeholder: "Category", class: "form-control" %>
+  </div>
+  <%= f.submit "Save Workout", class: "btn btn-block btn-default" %>
+<% end %>
